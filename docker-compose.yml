@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+
+  the-internet:
+    image: gprestes/the-internet:v2.6.5
+    ports:
+      - "7080:5000"
+  cypress:
+    image: "cypress/included:12.12.0"
+    depends_on:
+      - the-internet
+    environment:
+      - CYPRESS_baseUrl=http://the-internet:5000
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e
