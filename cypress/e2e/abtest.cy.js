@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 describe('A/B Test', () => {
   it('passes', () => {
     cy.visit('/abtest')

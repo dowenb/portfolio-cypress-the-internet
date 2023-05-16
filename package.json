@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-cypress-the-internet",
+  "version": "1.0.0",
+  "description": "Run `docker compose up` to start The Internet and run Cypress tests.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.12.0"
+  }
+}
